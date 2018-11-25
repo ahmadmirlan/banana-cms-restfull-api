@@ -5,6 +5,8 @@ const router = express.Router();
 const auth = require("../middleware/auth");
 const { User } = require("../model/UserModel");
 const PageBuilder = require("../library/PageBuilder");
+const validateId = require("../middleware/validateObjectId");
+const { policyUpdate, policyDelete } = require("../middleware/postPolicy");
 
 /*POST create new Post | (Role: Auth) is required*/
 router.post("/", [auth], async (req, res) => {
@@ -25,10 +27,9 @@ router.post("/", [auth], async (req, res) => {
     _.pick(req.body, ["title", "cover", "content", "categories", "status"])
   );
 
-  /***********************Validate Author****************************/
+  /*Find Author By Id from Token*/
   const author = await User.findById(req.user._id).select("name");
-  console.log(author);
-  /*******************************************************************/
+
   post["publishDate"] = Date.now();
   post["author"] = author;
   post
@@ -37,18 +38,74 @@ router.post("/", [auth], async (req, res) => {
     .catch(error => res.status(400).send({ error: error }));
 });
 
+/*
+ **GET Find All Post || Expose For Public purpose,
+ **no sensitive data should be there
+ **/
 router.get("/", async (req, res) => {
   let size = req.query.size ? parseInt(req.query.size) : 10;
   let page = req.query.page ? parseInt(req.query.page) : 0;
-  let totalElement = await Post.countDocuments();
+  let totalElement = await Post.countDocuments({ status: "PUBLISHED" });
   Post.find({ status: "PUBLISHED" })
     .limit(size)
     .skip(page * size)
+    .sort("-publishDate")
     .then(post => {
       const pb = new PageBuilder(post, size, totalElement, page);
       res.send(pb.renderData);
     })
     .catch(error => res.status(500).send({ error: error }));
+});
+
+/*
+ **GET Find Post By Id || Expose For Public,
+ **no sensitive data should be there
+ **/
+router.get("/:id", [validateId], async (req, res) => {
+  Post.findOne({ _id: req.params.id, status: "PUBLISHED" })
+    .then(post => {
+      if (post) {
+        return res.send({ data: post });
+      } else {
+        return res.status(404).send({ error: "Post Not Found" });
+      }
+    })
+    .catch(err => {
+      return res.status(404).send({ error: err });
+    });
+});
+
+/*
+ * PUT update post || {Owner Of This Post} is required
+ * */
+router.put("/:id", [validateId, auth, policyUpdate], async (req, res) => {
+  const body = req.body;
+  const { error } = validate(body);
+  if (error) return res.status(400).send({ error: error.details[0].message });
+  let post = await Post.findById(req.params.id);
+
+  /*Initialize new value to existing post*/
+  post.title = body.title;
+  post.cover = body.cover;
+  post.content = body.content;
+  post.status = body.status;
+  post.categories = body.categories;
+
+  post.save();
+  if (!post)
+    return res.status(500).send({ error: "Opps.. Something Went Wrong" });
+  return res.send(post);
+});
+
+/*
+ * DELETE post by id || {Owner || Role:ADMIN} is required
+ * */
+router.delete("/:id", [validateId, auth, policyDelete], async (req, res) => {
+  Post.findByIdAndDelete(req.params.id)
+    .then(post => {
+      return res.send({ message: "Post Deleted." });
+    })
+    .catch(err => res.status(500).send(err));
 });
 
 module.exports = router;

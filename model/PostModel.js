@@ -1,5 +1,3 @@
-const PostCategory = require("./PostCategoryModel");
-
 const mongoose = require("mongoose");
 const Joi = require("joi");
 //Convert _id to id
