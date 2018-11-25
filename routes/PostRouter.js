@@ -7,6 +7,7 @@ const { User } = require("../model/UserModel");
 const PageBuilder = require("../library/PageBuilder");
 const validateId = require("../middleware/validateObjectId");
 const { policyUpdate, policyDelete } = require("../middleware/postPolicy");
+const isAdmin = require("../middleware/admin");
 
 /*POST create new Post | (Role: Auth) is required*/
 router.post("/", [auth], async (req, res) => {
@@ -57,6 +58,69 @@ router.get("/", async (req, res) => {
     .catch(error => res.status(500).send({ error: error }));
 });
 
+/*GET Find All Post Without limits || {Role:ADMIN} is required*/
+router.get("/all", [auth, isAdmin], async (req, res) => {
+  let statusPost = req.query.status ? req.query.status : "";
+  let size = req.query.size ? parseInt(req.query.size) : 10;
+  let page = req.query.page ? parseInt(req.query.page) : 0;
+  let totalElement = 0;
+
+  statusPost === ""
+    ? (totalElement = await Post.countDocuments())
+    : (totalElement = await Post.countDocuments({ status: statusPost }));
+
+  let post =
+    statusPost === ""
+      ? await Post.find()
+          .limit(size)
+          .skip(page * size)
+          .sort("-publishDate")
+      : await Post.find({ status: statusPost })
+          .limit(size)
+          .skip(page * size)
+          .sort("-publishDate");
+
+  let pb = new PageBuilder(post, size, totalElement, page);
+
+  post
+    ? res.send(pb.renderData)
+    : res.status(500).send({ error: "Opps.. Something Went Wrong!" });
+});
+
+router.get("/category/:cat", [auth, isAdmin], async (req, res) => {
+  let statusPost = req.query.status ? req.query.status : "";
+  let size = req.query.size ? parseInt(req.query.size) : 10;
+  let page = req.query.page ? parseInt(req.query.page) : 0;
+  let totalElement = 0;
+
+  statusPost === ""
+    ? (totalElement = await Post.countDocuments({
+        categories: { postCategory: req.params.cat }
+      }))
+    : (totalElement = await Post.countDocuments({
+        status: statusPost,
+        categories: { postCategory: req.params.cat }
+      }));
+
+  let post =
+    statusPost === ""
+      ? await Post.find({ categories: { postCategory: req.params.cat } })
+          .limit(size)
+          .skip(size * page)
+          .sort("-publishDate")
+      : await Post.find({
+          status: statusPost,
+          categories: { postCategory: req.params.cat }
+        })
+          .limit(size)
+          .skip(size * page)
+          .sort("-publishDate");
+
+  const pb = new PageBuilder(post, size, totalElement, page);
+
+  res.send(pb.renderData);
+});
+
 /*
  **GET Find Post By Id || Expose For Public,
  **no sensitive data should be there
@@ -102,7 +166,7 @@ router.put("/:id", [validateId, auth, policyUpdate], async (req, res) => {
  * */
 router.delete("/:id", [validateId, auth, policyDelete], async (req, res) => {
   Post.findByIdAndDelete(req.params.id)
-    .then(post => {
+    .then(() => {
       return res.send({ message: "Post Deleted." });
     })
     .catch(err => res.status(500).send(err));
