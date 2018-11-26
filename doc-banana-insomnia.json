@@ -1,0 +1,993 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-11-26T01:41:32.407Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"resources": [
+		{
+			"_id": "wrk_9a23d427d03e4415afda4572e07e9050",
+			"created": 1542104173098,
+			"description": "",
+			"modified": 1542104173098,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_fe6d53c50e1b44df8a61915b69abcd68",
+			"color": null,
+			"created": 1542104173166,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1542104173166,
+			"modified": 1542104173166,
+			"name": "New Environment",
+			"parentId": "wrk_9a23d427d03e4415afda4572e07e9050",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_11aba5af5e9e4972b00fff98897dad46",
+			"cookies": [],
+			"created": 1542104173169,
+			"modified": 1542104173169,
+			"name": "Default Jar",
+			"parentId": "wrk_9a23d427d03e4415afda4572e07e9050",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_89ff90fdecb84c4e8f32b1bcf3a8dba3",
+			"created": 1542104214353,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542104214353,
+			"modified": 1542104214353,
+			"name": "Rent Car",
+			"parentId": "wrk_9a23d427d03e4415afda4572e07e9050",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_3d5fc487d3d84bde9963682db98e648e",
+			"created": 1542284545232,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542284545232,
+			"modified": 1543196415472,
+			"name": "Banana",
+			"parentId": "wrk_9a23d427d03e4415afda4572e07e9050",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_ded44a7f9a0146a3aa6b6d847e6b38de",
+			"created": 1542104239794,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542104214346.75,
+			"modified": 1542108139250,
+			"name": "Auth",
+			"parentId": "fld_89ff90fdecb84c4e8f32b1bcf3a8dba3",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_35d6741055cc47c6a00669ceb0be211b",
+			"created": 1542106624977,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542104214296.75,
+			"modified": 1542108141393,
+			"name": "Users",
+			"parentId": "fld_89ff90fdecb84c4e8f32b1bcf3a8dba3",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_621fab89b85d440bb87cd62b0e8d00ae",
+			"created": 1542108159723,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542108159723,
+			"modified": 1542108159723,
+			"name": "Car Types",
+			"parentId": "fld_89ff90fdecb84c4e8f32b1bcf3a8dba3",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_eef7322a3f1e43098a04ccef23022e78",
+			"created": 1542153593343,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542153593343,
+			"modified": 1542153593343,
+			"name": "Cars",
+			"parentId": "fld_89ff90fdecb84c4e8f32b1bcf3a8dba3",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_50a3d7539e824249a03b462ae3d7d65f",
+			"created": 1542284886496,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542284886496,
+			"modified": 1542284886496,
+			"name": "Auth",
+			"parentId": "fld_3d5fc487d3d84bde9963682db98e648e",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_ecde48d288e04d16becbbe3f93f8564f",
+			"created": 1542285178787,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542285178787,
+			"modified": 1542285178787,
+			"name": "Post Category",
+			"parentId": "fld_3d5fc487d3d84bde9963682db98e648e",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"created": 1542366605993,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542366605993,
+			"modified": 1542366611488,
+			"name": "Post",
+			"parentId": "fld_3d5fc487d3d84bde9963682db98e648e",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_74f76da57c5942abad6c62f314b0586b",
+			"created": 1542503829676,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1542503829676,
+			"modified": 1542503829676,
+			"name": "User",
+			"parentId": "fld_3d5fc487d3d84bde9963682db98e648e",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_50021dc6bce244428fda93ea7f5775c5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Willy Dumb\",\n\t\"email\": \"willy@mail.com\",\n\t\"password\": \"letmein\"\n}"
+			},
+			"created": 1542104285175,
+			"description": "Create New Account",
+			"headers": [
+				{
+					"id": "pair_66e6fd075f844c4a94e21735879457dd",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542104285175,
+			"method": "POST",
+			"modified": 1542108230586,
+			"name": "Register",
+			"parameters": [],
+			"parentId": "fld_ded44a7f9a0146a3aa6b6d847e6b38de",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/auth/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_08ac4c11c7db411388ed7261413379b5",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"willy@mail.com\",\n\t\"password\": \"letmein\"\n}"
+			},
+			"created": 1542106509399,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_25ddbe5408514660a5c465aa21e9a8ac",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542106509399,
+			"method": "POST",
+			"modified": 1542154067014,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "fld_ded44a7f9a0146a3aa6b6d847e6b38de",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/auth/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8dcaac01aefe4ee6afa91242a9d4a73c",
+			"authentication": {},
+			"body": {},
+			"created": 1542106635081,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8c00746b7f41485ca34a33068fed05e7",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYWQ2N2NjMDkyZDJiNjRlOGI0MTYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDIxMDczNzJ9.CPZeiLnhwlixuqx5OhcxwItZk9pJ1TlaBNfP4seaUqo"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542106635081,
+			"method": "GET",
+			"modified": 1542107487284,
+			"name": "Get All Users",
+			"parameters": [
+				{
+					"id": "pair_a2f88f47affd4436a17e8c148b2f715b",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "fld_35d6741055cc47c6a00669ceb0be211b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cf833530557d40d9b945095fe39477ae",
+			"authentication": {},
+			"body": {},
+			"created": 1542107442391,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b8b4eac421774e898d7a276d7ed9a839",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYWQ2N2NjMDkyZDJiNjRlOGI0MTYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDIxMDczNzJ9.CPZeiLnhwlixuqx5OhcxwItZk9pJ1TlaBNfP4seaUqo"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542107442391,
+			"method": "GET",
+			"modified": 1542107999511,
+			"name": "Get Single User",
+			"parameters": [],
+			"parentId": "fld_35d6741055cc47c6a00669ceb0be211b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/users/5beaad67cc092d2b64e8b416",
+			"_type": "request"
+		},
+		{
+			"_id": "req_282892a13e434b05a1bb82fb96515962",
+			"authentication": {},
+			"body": {},
+			"created": 1542107934736,
+			"description": "Return about me, find with token based you send!",
+			"headers": [
+				{
+					"id": "pair_b99159c737df4fe4a98d6c196c0b9264",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYWQ2N2NjMDkyZDJiNjRlOGI0MTYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDIxMDczNzJ9.CPZeiLnhwlixuqx5OhcxwItZk9pJ1TlaBNfP4seaUqo"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542107934736,
+			"method": "GET",
+			"modified": 1542108097745,
+			"name": "Me",
+			"parameters": [],
+			"parentId": "fld_35d6741055cc47c6a00669ceb0be211b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/users/me",
+			"_type": "request"
+		},
+		{
+			"_id": "req_803bab2f74024a53ab9b4ace1254f327",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"carType\": \"SUV3\"\n}"
+			},
+			"created": 1542108171826,
+			"description": "Cartypes CRUD,\n- Read data can be done without authentications\n- Write data need admin or cs role permissions",
+			"headers": [
+				{
+					"id": "pair_5f5f11b6f239464fa4fe80f22e6a249b",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_af10547f4e8b4c08932a9310e0a6334c",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYjQ0Yzk2OWM0MzMzMmE5NWZhM2UiLCJyb2xlIjoiQ1MiLCJpYXQiOjE1NDIxMDgzMDR9.2kp7jPOhBM3qpG7gnO_qbBXmphYuojGczFT1CQFdzXY"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542108171826,
+			"method": "POST",
+			"modified": 1542109019487,
+			"name": "Create Car Type",
+			"parameters": [],
+			"parentId": "fld_621fab89b85d440bb87cd62b0e8d00ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cartypes",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9de2bfff1b604a51ad3b25809ec8968e",
+			"authentication": {},
+			"body": {},
+			"created": 1542108386246,
+			"description": "Cartypes CRUD,\n- Read data can be done without authentications\n- Write data need admin or cs role permissions",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1542108386246,
+			"method": "GET",
+			"modified": 1542155114276,
+			"name": "Get All Cartypes",
+			"parameters": [],
+			"parentId": "fld_621fab89b85d440bb87cd62b0e8d00ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cartypes",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ce7c9d693be147e1aa737081cdf47406",
+			"authentication": {},
+			"body": {},
+			"created": 1542108413816,
+			"description": "Cartypes CRUD,\n- Read data can be done without authentications\n- Write data need admin or cs role permissions",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1542108413816,
+			"method": "GET",
+			"modified": 1542155111565,
+			"name": "Get Single Cartypes",
+			"parameters": [],
+			"parentId": "fld_621fab89b85d440bb87cd62b0e8d00ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cartypes/5beab4cb969c43332a95fa3f",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6cbf44a7ae90435889d71c7ebae6d59e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"carType\": \"MVP\"\n}"
+			},
+			"created": 1542108466138,
+			"description": "Cartypes CRUD,\n- Read data can be done without authentications\n- Write data need admin or cs role permissions",
+			"headers": [
+				{
+					"id": "pair_b4244abdc67d4f7ea585455ce6abf2a2",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_8afe5b0737a54f27803f066dad7ee171",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYjQ0Yzk2OWM0MzMzMmE5NWZhM2UiLCJyb2xlIjoiQ1MiLCJpYXQiOjE1NDIxMDgzMDR9.2kp7jPOhBM3qpG7gnO_qbBXmphYuojGczFT1CQFdzXY"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542108400031,
+			"method": "PUT",
+			"modified": 1542155097551,
+			"name": "Update Cartypes",
+			"parameters": [],
+			"parentId": "fld_621fab89b85d440bb87cd62b0e8d00ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cartypes/5beab711969c43332a95fa42",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8a8e3d679d9246d98f566b767b3e5090",
+			"authentication": {},
+			"body": {},
+			"created": 1542108825647,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_493a130e56874a118cddbd4884b1dd0c",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYjQ0Yzk2OWM0MzMzMmE5NWZhM2UiLCJyb2xlIjoiQ1MiLCJpYXQiOjE1NDIxMDgzMDR9.2kp7jPOhBM3qpG7gnO_qbBXmphYuojGczFT1CQFdzXY"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542108825647,
+			"method": "DELETE",
+			"modified": 1542108933033,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_621fab89b85d440bb87cd62b0e8d00ae",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cartypes/5beab6bf969c43332a95fa41",
+			"_type": "request"
+		},
+		{
+			"_id": "req_01f506aa68d44c469f7b1bbf45fd36ff",
+			"authentication": {},
+			"body": {},
+			"created": 1542153609421,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1542153609421,
+			"method": "GET",
+			"modified": 1542284534489,
+			"name": "Get All Cars",
+			"parameters": [],
+			"parentId": "fld_eef7322a3f1e43098a04ccef23022e78",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cars?page=0&limit=2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7097b2b52e7a41acad24863e7085829f",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"carName\": \"Honda CR-V 2012\",\n\t\"color\": \"White\",\n\t\"carType\": {\n\t\t\"carType\": \"SUV\",\n\t\t\"_id\": \"5beab4d7969c43332a95fa40\"\n\t},\n\t\"sheet\": 5,\n\t\"accelerationType\": \"MANUAL\",\n\t\"price\": 30000\n}"
+			},
+			"created": 1542153840923,
+			"description": "Create New Car\n- Require Admin or Cs roles",
+			"headers": [
+				{
+					"id": "pair_356c8c99b4514f10981a94d97b9f8b5e",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_fe68e75c648847b881b010752e41ecad",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVhYjQ0Yzk2OWM0MzMzMmE5NWZhM2UiLCJyb2xlIjoiQ1MiLCJpYXQiOjE1NDIxNTQwNjh9.ms_Q7vCq7F-p8tLvDMjXxvqqRSHdG-vssmIwOW6udWk"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542153840923,
+			"method": "POST",
+			"modified": 1542155206781,
+			"name": "Create New Cars",
+			"parameters": [],
+			"parentId": "fld_eef7322a3f1e43098a04ccef23022e78",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/cars?",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8b54b2411bb84f96aaadb4b72e139150",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Demo User\",\n\t\"email\": \"demo@mail.com\",\n\t\"password\": \"letmein\"\n}"
+			},
+			"created": 1542284557942,
+			"description": "Register New User\n- Format\n- {\n\t\"name\": \"String\",\n  \"email\": \"String\",\n  \"password\": \"String\"\n}",
+			"headers": [
+				{
+					"id": "pair_5cdab130f37c4b3bb8ab0a9e46ec72ca",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542284884872,
+			"method": "POST",
+			"modified": 1543111772179,
+			"name": "Register New User",
+			"parameters": [],
+			"parentId": "fld_50a3d7539e824249a03b462ae3d7d65f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/auth/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_37c997b213ef4943859a40a53bb979f8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"demo@mail.com\",\n\t\"password\": \"letmein\"\n}"
+			},
+			"created": 1542284879800,
+			"description": "Authenthication\n- Format\n- \n{\n\t\"email\": \"String\",\n  \"password\": \"String\"\n}",
+			"headers": [
+				{
+					"id": "pair_669c78a454d1415ba7a8af2f28dce831",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542284884822,
+			"method": "POST",
+			"modified": 1543114423356,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "fld_50a3d7539e824249a03b462ae3d7d65f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/auth/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e54b4557b6754b2da333b34d6132d655",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"postCategory\": \"LA\"\n}"
+			},
+			"created": 1542285198427,
+			"description": "Create New Post Categories\n- Admin || Content Manajement  ",
+			"headers": [
+				{
+					"id": "pair_effd202c8b0140668dc452475ccbf3f5",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_09a1aa2aea4d4ad1b76c1dc9b1cd0eba",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjVkZjRhOWFkZTFiMDNiNWJhMGYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDIyODcyNjh9.CS5NPCGm8Ia6ZIzo42xC7Exu3V0ZvWsR-jl5F18_0Ws"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542285198427,
+			"method": "POST",
+			"modified": 1543156096370,
+			"name": "Create New Category",
+			"parameters": [],
+			"parentId": "fld_ecde48d288e04d16becbbe3f93f8564f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/postcategories",
+			"_type": "request"
+		},
+		{
+			"_id": "req_82aab2577c844c4997d46332c2d5b0e3",
+			"authentication": {},
+			"body": {},
+			"created": 1542286319256,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1542286319256,
+			"method": "GET",
+			"modified": 1543111435638,
+			"name": "Get All Post Cat",
+			"parameters": [],
+			"parentId": "fld_ecde48d288e04d16becbbe3f93f8564f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/postcategories?size=5&page=0",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fb3bb1cc07f94223b8ca1a819016fc25",
+			"authentication": {},
+			"body": {},
+			"created": 1542286818948,
+			"description": "Get Post Category By Id\n",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1542286818948,
+			"method": "GET",
+			"modified": 1543107581662,
+			"name": "Get Post Category By Id",
+			"parameters": [],
+			"parentId": "fld_ecde48d288e04d16becbbe3f93f8564f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/postcategories/5bed6bde3bece11ddd58572c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1ee7dac96f6f4f159bde24147fa1e427",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"postCategory\": \"Java\"\n}"
+			},
+			"created": 1542287403328,
+			"description": "Update Post Category\n- Role ADMIN || CM is required",
+			"headers": [
+				{
+					"id": "pair_d313ba44a39b4424a2f1c4a86ce6d65b",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": false,
+					"id": "pair_d039688679274323abf377b53d2a25a0",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjVkZjRhOWFkZTFiMDNiNWJhMGYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDIyODc2NjZ9.OvgmXOL1nZZW8tPvO-ZkYyUX8WGmcdCJkzpWpo1dtqI"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542287403328,
+			"method": "PUT",
+			"modified": 1543033135733,
+			"name": "Update Post Category",
+			"parameters": [],
+			"parentId": "fld_ecde48d288e04d16becbbe3f93f8564f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/postcategories/5bed6bde3bece11ddd58572c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a4340e8548e34d79969e69b7a27566c9",
+			"authentication": {},
+			"body": {},
+			"created": 1542365941338,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b0e2e82d17ae4b9a8c57e3c3e363c804",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjVkZjRhOWFkZTFiMDNiNWJhMGYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDIyODc2NjZ9.OvgmXOL1nZZW8tPvO-ZkYyUX8WGmcdCJkzpWpo1dtqI"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542365941338,
+			"method": "DELETE",
+			"modified": 1543107585240,
+			"name": "Delete Post Category",
+			"parameters": [],
+			"parentId": "fld_ecde48d288e04d16becbbe3f93f8564f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/postcategories/5beea44ae319f617e557bd7a",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1e4cb69054d74d82a720801711391a8b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Test adad\",\n\t\"cover\": \"1234ss567\",\n\t\"content\": \"Ini hanya minpi sungguh wkwkwk jdksjdskjdk nsdnmsdnksjdksjdksd\",\n\t\"status\": \"PUBLISHED\",\n\t\"categories\": [\n\t\t{\n      \"postCategory\": \"Java\"\n    }\n\t]\n}"
+			},
+			"created": 1542450958917,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_bb9e4057d6e84bfa975cbbf41175c68f",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_92848ab8382048819ddca9aa32ef83cc",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjY0NDRhOWFkZTFiMDNiNWJhMTAiLCJyb2xlIjoiQ00iLCJpYXQiOjE1NDI1MDQ0NzN9.xThAwAh4-GC2K1GOvq8q46m_a_iveAm4giTz3x3jvGo"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542450958917,
+			"method": "POST",
+			"modified": 1543156433969,
+			"name": "Create Post",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5bfd7c7ab94f4d468740c2455c05bda8",
+			"authentication": {},
+			"body": {},
+			"created": 1542504844962,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1542504844962,
+			"method": "GET",
+			"modified": 1543195049941,
+			"name": "Get  All Post",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts?size=5&page=0&category=",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3364ebf646dd48ac80751fa352be4887",
+			"authentication": {},
+			"body": {},
+			"created": 1543107364236,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1543107364236,
+			"method": "GET",
+			"modified": 1543150653101,
+			"name": "Get Post By Id",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts/5bf96dde732dd77de43dcb03",
+			"_type": "request"
+		},
+		{
+			"_id": "req_215fafb34e1b46e9ac73373b141a45ab",
+			"authentication": {},
+			"body": {},
+			"created": 1543109105970,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1a4683e6adc1445f95c1e9556ef47180",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmZhMDQ1ZmY2M2M4MTU2NjA2NzM3MGEiLCJyb2xlIjoiVklTSVRPUiIsImlhdCI6MTU0MzExMTgwNX0.JJnsfcAU4hSOmnDdIelcYiqaWltX9RkNbTYSANgKivk"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543109105970,
+			"method": "DELETE",
+			"modified": 1543150651831,
+			"name": "Delete Post",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts/5bf96dde732dd77de43dcb03",
+			"_type": "request"
+		},
+		{
+			"_id": "req_828ddb18952344239b6fc039d448d32c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Test Ahahaha\",\n\t\"cover\": \"1234ss567\",\n\t\"content\": \"Ini hanya minpi coekkkkkkk sddddddddddddddddddddddddddddd dfffffffffffff dffffffffffffffff dfffffffffff\",\n\t\"status\": \"PUBLISHED\",\n\t\"categories\": [\n\t\t{\n      \"postCategory\": \"Python\"\n    }\n\t]\n}"
+			},
+			"created": 1543110981899,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a2ce141a73404e47a50867042153f76d",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjY0NDRhOWFkZTFiMDNiNWJhMTAiLCJyb2xlIjoiQ00iLCJpYXQiOjE1NDI1MDQ0NzN9.xThAwAh4-GC2K1GOvq8q46m_a_iveAm4giTz3x3jvGo"
+				},
+				{
+					"id": "pair_7781f11b17604498b1ed5234463879a6",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543110981899,
+			"method": "PUT",
+			"modified": 1543154232544,
+			"name": "Update Post",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts/5bf96dde732dd77de43dcb03",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f4200f8d82444a8f978bc033bf1a6477",
+			"authentication": {},
+			"body": {},
+			"created": 1543146555277,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_bbe471499c7d489297844cfdc6a85bfa",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjVkZjRhOWFkZTFiMDNiNWJhMGYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDI0NTExMTV9.GdJ9hnp4EDZEFIqo9lxQFexTBIdU2SMy4Hez4DcXgkY"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543146555277,
+			"method": "GET",
+			"modified": 1543194759233,
+			"name": "Find All Post With Status",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts/all/?status=PUBLISHED",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e5b794e832384390a84937a99aa1afc0",
+			"authentication": {},
+			"body": {},
+			"created": 1543155657496,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_ace8348d6dcd4a42962b1ec6f20cde8b",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjVkZjRhOWFkZTFiMDNiNWJhMGYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDI0NTExMTV9.GdJ9hnp4EDZEFIqo9lxQFexTBIdU2SMy4Hez4DcXgkY"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543155657496,
+			"method": "GET",
+			"modified": 1543156437827,
+			"name": "Find Post By Category",
+			"parameters": [],
+			"parentId": "fld_6b14f71180f64652aa43c69a2cd14b83",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/posts/category/Java",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3e72a4e3001b4c8c92864aef594ea9e7",
+			"authentication": {},
+			"body": {},
+			"created": 1542503835848,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_ddac397ca522450393120a38dd328ffb",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjVkZjRhOWFkZTFiMDNiNWJhMGYiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE1NDI0NTExMTV9.GdJ9hnp4EDZEFIqo9lxQFexTBIdU2SMy4Hez4DcXgkY"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542503835848,
+			"method": "GET",
+			"modified": 1543196406605,
+			"name": "Get All Users",
+			"parameters": [],
+			"parentId": "fld_74f76da57c5942abad6c62f314b0586b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_55e0763089c2443fbdf7f6fffb2f11f2",
+			"authentication": {},
+			"body": {},
+			"created": 1542504299818,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_04f676a3121a438b918cb676aa2d29b7",
+					"name": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmVkNjY0NDRhOWFkZTFiMDNiNWJhMTAiLCJyb2xlIjoiQ00iLCJpYXQiOjE1NDI1MDQ0NzN9.xThAwAh4-GC2K1GOvq8q46m_a_iveAm4giTz3x3jvGo"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542504299818,
+			"method": "GET",
+			"modified": 1543196405622,
+			"name": "Me",
+			"parameters": [],
+			"parentId": "fld_74f76da57c5942abad6c62f314b0586b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "localhost:3000/api/users/me",
+			"_type": "request"
+		}
+	]
+}
