@@ -14,4 +14,9 @@ A Back End of Banana, a platform to manage content management system built with 
 2. Database: Mongodb
 3. JWT (For Authentication)
 4. Express (as Node Framework)
-5. ----
+
+# Documentation
+1. The documentation of this project is written and documented at insomnia rest client app
+2. Download Insomnia app at https://insomnia.rest/
+3. Open file doc-banana-insomnia.json with insomnia app
+4. Read the doc. :)
