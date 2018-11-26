@@ -9,7 +9,7 @@ const validateId = require("../middleware/validateObjectId");
 const { policyUpdate, policyDelete } = require("../middleware/postPolicy");
 const isAdmin = require("../middleware/admin");
 
-/*POST create new Post | (Role: Auth) is required*/
+/*POST create new Post | (Authentication) is required*/
 router.post("/", [auth], async (req, res) => {
   const body = req.body;
   const { error } = validate(body);
@@ -46,16 +46,32 @@ router.post("/", [auth], async (req, res) => {
 router.get("/", async (req, res) => {
   let size = req.query.size ? parseInt(req.query.size) : 10;
   let page = req.query.page ? parseInt(req.query.page) : 0;
-  let totalElement = await Post.countDocuments({ status: "PUBLISHED" });
-  Post.find({ status: "PUBLISHED" })
-    .limit(size)
-    .skip(page * size)
-    .sort("-publishDate")
-    .then(post => {
-      const pb = new PageBuilder(post, size, totalElement, page);
-      res.send(pb.renderData);
-    })
-    .catch(error => res.status(500).send({ error: error }));
+  let category = req.query.category ? req.query.category : "";
+  let totalElement =
+    category === ""
+      ? await Post.countDocuments({ status: "PUBLISHED" })
+      : await Post.countDocuments({
+          status: "PUBLISHED",
+          categories: { postCategory: category }
+        });
+
+  let post =
+    category !== ""
+      ? await Post.find({
+          status: "PUBLISHED",
+          categories: { postCategory: category }
+        })
+          .limit(size)
+          .skip(page * size)
+          .sort("-publishDate")
+      : await Post.find({ status: "PUBLISHED" })
+          .limit(size)
+          .skip(page * size)
+          .sort("-publishDate");
+  const pb = new PageBuilder(post, size, totalElement, page);
+  post
+    ? res.send(pb.renderData)
+    : res.status(500).send({ error: "Opps.. Something Went Wrong" });
 });
 
 /*GET Find All Post Without limits || {Role:ADMIN} is required*/
